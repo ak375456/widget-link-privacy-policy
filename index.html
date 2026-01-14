@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WidgetLink</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 18px;
+            opacity: 0.95;
+        }
+        
+        .indie-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .intro-box {
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #2196F3;
+        }
+        
+        .intro-box h2 {
+            color: #1976D2;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .intro-box p {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            font-size: 26px;
+            color: #1976D2;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2196F3;
+        }
+        
+        .section p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .section ul li {
+            padding: 10px 0 10px 25px;
+            position: relative;
+            font-size: 16px;
+        }
+        
+        .section ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2196F3;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 16px;
+        }
+        
+        .highlight-box {
+            background: #FFF9C4;
+            border: 2px solid #FBC02D;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box h3 {
+            color: #F57F17;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .highlight-box ul {
+            margin-top: 10px;
+        }
+        
+        .service-card {
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #2196F3;
+        }
+        
+        .service-card h3 {
+            color: #2196F3;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .service-card p {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+        
+        .service-card strong {
+            color: #555;
+        }
+        
+        .subsection {
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        
+        .subsection h3 {
+            color: #1976D2;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .subsection p {
+            color: #555;
+            font-size: 15px;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .contact-box h2 {
+            color: #2E7D32;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box p {
+            margin-bottom: 20px;
+        }
+        
+        .contact-box a {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .contact-box a:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer strong {
+            color: #2196F3;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+            
+            .header h1 {
+                font-size: 32px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .section h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <p>WidgetLink - Your Privacy Matters</p>
+            <div class="indie-badge">Indie Developer Project</div>
+            <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">Last Updated: January 2026</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro-box">
+                <h2>Our Commitment to Your Privacy</h2>
+                <p>WidgetLink is an indie app developed by a solo developer who deeply cares about your privacy. This app is built with your privacy as the top priority. We believe in transparency and simplicity: <strong>we don't collect your personal data, we don't show ads, and we don't track your behavior.</strong></p>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>What We DON'T Collect</h3>
+                <ul>
+                    <li>No personal information (name, email, phone number)</li>
+                    <li>No usage analytics or tracking</li>
+                    <li>No advertising identifiers</li>
+                    <li>No device information beyond what's necessary for the app to function</li>
+                    <li>No location data</li>
+                    <li>No third-party analytics (no Firebase Analytics, Google Analytics, or any tracking tools)</li>
+                    <li>No advertisements or ad networks</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>What We DO Store</h2>
+                <p>To make WidgetLink work, we store only the bare essentials needed for the app's core functionality:</p>
+                
+                <div class="subsection">
+                    <h3>Anonymous User ID</h3>
+                    <p>When you first open the app, we create an anonymous account using Firebase Authentication. This gives you a unique identifier needed for the app to function, but it contains <strong>absolutely no personal information</strong>. No email, no password, no name — just a random ID.</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Drawing Data</h3>
+                    <p>Your drawings are stored in Supabase Storage so they can be displayed as widgets and shared with your room members. These are only the images you create within the app.</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Room Information</h3>
+                    <p>Room names, room codes, and member lists are stored in Firebase Firestore to enable the room sharing functionality. This is the minimum data required to connect users who want to share widgets.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Security & Privacy Features</h2>
+                <p>Your security is built into how WidgetLink works:</p>
+                
+                <div class="subsection">
+                    <h3>Request-Based Access System</h3>
+                    <p>When someone enters a room code, they cannot automatically access your widget. Instead, a <strong>join request is sent to the room creator (host)</strong>, who must manually approve it. This prevents unauthorized access even if someone randomly types in codes.</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Room-Based Privacy</h3>
+                    <p>Drawings are only visible to members of the specific room. Your widgets aren't public and cannot be discovered by others unless you explicitly share your room code with them.</p>
+                </div>
+                
+                <div class="subsection">
+                    <h3>No Cross-Room Access</h3>
+                    <p>Members of one room cannot see or access drawings from other rooms. Each room is completely isolated.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Third-Party Services</h2>
+                <p>WidgetLink uses the following third-party services solely for app functionality (not for tracking or advertising):</p>
+                
+                <div class="service-card">
+                    <h3>Firebase Authentication</h3>
+                    <p><strong>Purpose:</strong> Creates anonymous user accounts for the app to function</p>
+                    <p><strong>Data Stored:</strong> Anonymous user ID only (no email, no password, no personal information)</p>
+                    <p><strong>Why We Use It:</strong> To give each user a unique identifier needed for room membership</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Firebase Firestore</h3>
+                    <p><strong>Purpose:</strong> Stores room data and manages join requests</p>
+                    <p><strong>Data Stored:</strong> Room names, room codes, anonymous member IDs, join request status</p>
+                    <p><strong>Why We Use It:</strong> To enable real-time syncing of room memberships and requests</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Supabase Storage</h3>
+                    <p><strong>Purpose:</strong> Stores widget drawing images</p>
+                    <p><strong>Data Stored:</strong> Image files of your drawings</p>
+                    <p><strong>Why We Use It:</strong> To store and serve widget images to room members</p>
+                </div>
+                
+                <p style="margin-top: 20px;"><strong>Important:</strong> We do NOT use Firebase Analytics, Google Analytics, or any other analytics services. We do NOT use advertising networks or SDKs.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Your Rights & Control</h2>
+                <ul>
+                    <li><strong>Delete your data:</strong> Uninstalling the app removes all local data. Room data associated with your anonymous ID will remain in our database for other room members, but cannot be linked back to you.</li>
+                    <li><strong>Leave rooms:</strong> Exit any room at any time from the app dashboard.</li>
+                    <li><strong>Control access:</strong> You decide who joins your rooms through the manual approval system.</li>
+                    <li><strong>No account recovery:</strong> Since accounts are completely anonymous with no email or password, there is no account recovery process.</li>
+                    <li><strong>Data portability:</strong> Since we don't collect personal data, there's no personal data to export.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Data Retention</h2>
+                <p>We retain data only as long as necessary for the app to function:</p>
+                <ul>
+                    <li>Room data and drawings are kept as long as the room exists</li>
+                    <li>When all members leave a room, the room data may be periodically cleaned</li>
+                    <li>Anonymous user IDs are retained to maintain room memberships</li>
+                    <li>No historical usage data or logs are kept</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Children's Privacy</h2>
+                <p>WidgetLink does not knowingly collect any personal information from anyone, including children. The app is designed to be privacy-friendly for users of all ages. Since we don't collect personal information and only use anonymous IDs, we don't have age verification requirements.</p>
+            </div>
+            
+            <div class="section">
+                <h2>International Users</h2>
+                <p>WidgetLink can be used worldwide. Data is stored on Firebase (Google Cloud) and Supabase servers, which may be located in different countries. However, since we only store anonymous IDs and drawings (no personal data), there are no privacy concerns related to international data transfers.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Changes to This Policy</h2>
+                <p>As an indie project, we may update this privacy policy from time to time to reflect changes in our practices or for legal reasons. Any changes will be posted on this page with an updated "Last Updated" date at the top. Continued use of WidgetLink after changes constitutes acceptance of the updated policy.</p>
+                <p>We will notify users of significant changes through an in-app notice.</p>
+            </div>
+            
+            <div class="section">
+                <h2>About This Indie Project</h2>
+                <p>WidgetLink is developed and maintained by an independent developer. This is a passion project created with love for users who value privacy and simplicity. There is no company, no investors, and no commercial interests behind this app — just one developer who wants to create something useful while respecting your privacy.</p>
+            </div>
+            
+            <div class="contact-box">
+                <h2>Contact Us</h2>
+                <p>If you have questions about this privacy policy or WidgetLink's privacy practices, please feel free to reach out:</p>
+                <a href="mailto:your.email@example.com?subject=WidgetLink Privacy Question">Email Us</a>
+                <p style="margin-top: 20px; font-size: 14px; color: #666;">We typically respond within 2-3 business days</p>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <p><strong>Thank you for trusting WidgetLink!</strong></p>
+            <p style="margin-top: 10px;">© 2026 WidgetLink - An Indie Developer Project</p>
+            <p style="margin-top: 5px; font-size: 12px;">Made with care for your privacy</p>
+        </div>
+    </div>
+</body>
+</html>
