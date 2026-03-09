@@ -5,285 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - WidgetLink</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.6; color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            min-height: 100vh; padding: 20px;
         }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .header p {
-            font-size: 18px;
-            opacity: 0.95;
-        }
-        
-        .indie-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 20px;
-            border-radius: 20px;
-            margin-top: 15px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .intro-box {
-            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            border-left: 5px solid #2196F3;
-        }
-        
-        .intro-box h2 {
-            color: #1976D2;
-            margin-bottom: 15px;
-            font-size: 24px;
-        }
-        
-        .intro-box p {
-            font-size: 16px;
-            color: #333;
-        }
-        
-        .section {
-            margin-bottom: 40px;
-        }
-        
-        .section h2 {
-            font-size: 26px;
-            color: #1976D2;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #2196F3;
-        }
-        
-        .section p {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-        
-        .section ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .section ul li {
-            padding: 10px 0 10px 25px;
-            position: relative;
-            font-size: 16px;
-        }
-        
-        .section ul li:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #2196F3;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 16px;
-        }
-        
-        .section ol {
-            list-style: decimal;
-            padding-left: 40px;
-            margin-top: 15px;
-        }
-        
-        .section ol li {
-            margin-bottom: 15px;
-            padding-left: 10px;
-        }
-        
-        .section ol li ul {
-            list-style: none;
-            padding-left: 20px;
-            margin-top: 10px;
-        }
-        
-        .section ol li ul li {
-            padding: 5px 0;
-        }
-        
-        .section ol li ul li:before {
-            content: "•";
-            position: absolute;
-            left: 20px;
-            color: #2196F3;
-            font-weight: bold;
-        }
-        
-        .highlight-box {
-            background: #FFF9C4;
-            border: 2px solid #FBC02D;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 20px 0;
-        }
-        
-        .highlight-box h3 {
-            color: #F57F17;
-            margin-bottom: 15px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-        
-        .highlight-box ul {
-            margin-top: 10px;
-        }
-        
-        .deletion-box {
-            background: linear-gradient(135deg, #FFE0E0 0%, #FFD0D0 100%);
-            border: 2px solid #F44336;
-            border-radius: 12px;
-            padding: 25px;
-            margin: 20px 0;
-        }
-        
-        .deletion-box h3 {
-            color: #C62828;
-            margin-bottom: 15px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-        
-        .service-card {
-            background: #f5f5f5;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 15px 0;
-            border-left: 4px solid #2196F3;
-        }
-        
-        .service-card h3 {
-            color: #2196F3;
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-        
-        .service-card p {
-            margin: 5px 0;
-            font-size: 15px;
-        }
-        
-        .service-card strong {
-            color: #555;
-        }
-        
-        .subsection {
-            margin-left: 20px;
-            margin-top: 15px;
-        }
-        
-        .subsection h3 {
-            color: #1976D2;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        .subsection p {
-            color: #555;
-            font-size: 15px;
-        }
-        
-        .contact-box {
-            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        
-        .contact-box h2 {
-            color: #2E7D32;
-            margin-bottom: 15px;
-        }
-        
-        .contact-box p {
-            margin-bottom: 20px;
-        }
-        
-        .contact-box a {
-            display: inline-block;
-            background: #4CAF50;
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-        }
-        
-        .contact-box a:hover {
-            background: #45a049;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
-        }
-        
-        .footer {
-            background: #f5f5f5;
-            padding: 30px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-        
-        .footer strong {
-            color: #2196F3;
-            font-size: 18px;
-        }
-        
+        .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); color: white; padding: 60px 40px; text-align: center; }
+        .header h1 { font-size: 42px; margin-bottom: 10px; font-weight: 700; }
+        .header p { font-size: 18px; opacity: 0.95; }
+        .indie-badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; margin-top: 15px; font-size: 14px; font-weight: 500; }
+        .content { padding: 40px; }
+        .intro-box { background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); padding: 30px; border-radius: 15px; margin-bottom: 40px; border-left: 5px solid #2196F3; }
+        .intro-box h2 { color: #1976D2; margin-bottom: 15px; font-size: 24px; }
+        .intro-box p { font-size: 16px; color: #333; }
+        .section { margin-bottom: 40px; }
+        .section h2 { font-size: 26px; color: #1976D2; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 3px solid #2196F3; }
+        .section p { font-size: 16px; margin-bottom: 15px; }
+        .section ul { list-style: none; padding-left: 0; }
+        .section ul li { padding: 10px 0 10px 25px; position: relative; font-size: 16px; }
+        .section ul li:before { content: "•"; position: absolute; left: 0; color: #2196F3; font-weight: bold; font-size: 24px; line-height: 16px; }
+        .section ol { list-style: decimal; padding-left: 40px; margin-top: 15px; }
+        .section ol li { margin-bottom: 15px; padding-left: 10px; }
+        .section ol li ul { list-style: none; padding-left: 20px; margin-top: 10px; }
+        .section ol li ul li { padding: 5px 0; }
+        .section ol li ul li:before { content: "•"; position: absolute; left: 20px; color: #2196F3; font-weight: bold; }
+        .highlight-box { background: #FFF9C4; border: 2px solid #FBC02D; border-radius: 12px; padding: 25px; margin: 20px 0; }
+        .highlight-box h3 { color: #F57F17; margin-bottom: 15px; font-size: 20px; font-weight: 600; }
+        .highlight-box ul { margin-top: 10px; }
+        .deletion-box { background: linear-gradient(135deg, #FFE0E0 0%, #FFD0D0 100%); border: 2px solid #F44336; border-radius: 12px; padding: 25px; margin: 20px 0; }
+        .deletion-box h3 { color: #C62828; margin-bottom: 15px; font-size: 20px; font-weight: 600; }
+        .service-card { background: #f5f5f5; border-radius: 12px; padding: 20px; margin: 15px 0; border-left: 4px solid #2196F3; }
+        .service-card h3 { color: #2196F3; margin-bottom: 10px; font-size: 18px; }
+        .service-card p { margin: 5px 0; font-size: 15px; }
+        .service-card strong { color: #555; }
+        .subsection { margin-left: 20px; margin-top: 15px; }
+        .subsection h3 { color: #1976D2; font-size: 18px; margin-bottom: 10px; }
+        .subsection p { color: #555; font-size: 15px; }
+        .permission-box { background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%); border: 2px solid #9C27B0; border-radius: 12px; padding: 25px; margin: 20px 0; }
+        .permission-box h3 { color: #6A1B9A; margin-bottom: 15px; font-size: 20px; font-weight: 600; }
+        .permission-box ul { margin-top: 10px; }
+        .contact-box { background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border-radius: 15px; padding: 30px; text-align: center; margin-top: 40px; }
+        .contact-box h2 { color: #2E7D32; margin-bottom: 15px; }
+        .contact-box p { margin-bottom: 20px; }
+        .contact-box a { display: inline-block; background: #4CAF50; color: white; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(76,175,80,0.3); }
+        .contact-box a:hover { background: #45a049; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(76,175,80,0.4); }
+        .footer { background: #f5f5f5; padding: 30px; text-align: center; color: #666; font-size: 14px; }
+        .footer strong { color: #2196F3; font-size: 18px; }
         @media (max-width: 768px) {
-            .header {
-                padding: 40px 20px;
-            }
-            
-            .header h1 {
-                font-size: 32px;
-            }
-            
-            .content {
-                padding: 30px 20px;
-            }
-            
-            .section h2 {
-                font-size: 22px;
-            }
+            .header { padding: 40px 20px; }
+            .header h1 { font-size: 32px; }
+            .content { padding: 30px 20px; }
+            .section h2 { font-size: 22px; }
         }
     </style>
 </head>
@@ -293,15 +68,15 @@
             <h1>Privacy Policy</h1>
             <p>WidgetLink - Your Privacy Matters</p>
             <div class="indie-badge">Indie Developer Project</div>
-            <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">Last Updated: January 2026</p>
+            <p style="margin-top: 15px; font-size: 14px; opacity: 0.9;">Last Updated: March 2026</p>
         </div>
-        
+
         <div class="content">
             <div class="intro-box">
                 <h2>Our Commitment to Your Privacy</h2>
                 <p>WidgetLink is an indie app developed by a solo developer who deeply cares about your privacy. This app is built with your privacy as the top priority. We believe in transparency and simplicity: <strong>we don't collect your personal data, we don't show ads, and we don't track your behavior.</strong></p>
             </div>
-            
+
             <div class="highlight-box">
                 <h3>What We DON'T Collect</h3>
                 <ul>
@@ -312,92 +87,142 @@
                     <li>No location data</li>
                     <li>No third-party analytics (no Firebase Analytics, Google Analytics, or any tracking tools)</li>
                     <li>No advertisements or ad networks</li>
+                    <li>Photos from your camera or gallery are <strong>never stored on our servers</strong> — they are only used locally on your device as a canvas layer and are included in the final drawing image you choose to share</li>
                 </ul>
             </div>
-            
+
             <div class="section">
                 <h2>What We DO Store</h2>
                 <p>To make WidgetLink work, we store only the bare essentials needed for the app's core functionality:</p>
-                
+
                 <div class="subsection">
                     <h3>Anonymous User ID</h3>
                     <p>When you first open the app, we create an anonymous account using Firebase Authentication. This gives you a unique identifier needed for the app to function, but it contains <strong>absolutely no personal information</strong>. No email, no password, no name — just a random ID.</p>
                 </div>
-                
+
                 <div class="subsection">
-                    <h3>Drawing Data</h3>
-                    <p>Your drawings are stored in Supabase Storage so they can be displayed as widgets and shared with your room members. These are only the images you create within the app.</p>
+                    <h3>Drawing & Widget Images</h3>
+                    <p>Your final drawings are stored in Supabase Storage so they can be displayed as widgets and shared with your room members. These are only the final composed images you explicitly choose to send. If you added a photo from your camera or gallery to the canvas, only the <strong>final merged drawing</strong> is uploaded — the original photo file itself is never sent to our servers.</p>
                 </div>
-                
+
                 <div class="subsection">
                     <h3>Room Information</h3>
                     <p>Room names, room codes, and member lists are stored in Firebase Firestore to enable the room sharing functionality. This is the minimum data required to connect users who want to share widgets.</p>
                 </div>
             </div>
-            
+
+            <!-- NEW SECTION -->
+            <div class="section">
+                <h2>Camera & Photo Library Access</h2>
+                <p>WidgetLink includes a PRO feature that allows you to add a photo to your drawing canvas. Here is exactly how this works and what we access:</p>
+
+                <div class="permission-box">
+                    <h3>📷 How Photo Access Works</h3>
+                    <ul>
+                        <li><strong>Camera access</strong> is only requested when you tap "Take Photo" — it is never accessed in the background</li>
+                        <li><strong>Photo library access</strong> is only requested when you tap "Choose Photo" — we do not browse or scan your library</li>
+                        <li>The selected photo is loaded <strong>locally on your device only</strong> as a layer on the drawing canvas</li>
+                        <li>The original photo file is <strong>never uploaded</strong> to our servers in its original form</li>
+                        <li>Only the <strong>final composed image</strong> (your drawing merged with the photo) is uploaded when you tap Send — and only if you choose to do so</li>
+                        <li>If you close the drawing screen without sending, nothing is uploaded at all</li>
+                        <li>You can remove the photo from the canvas at any time before sending</li>
+                    </ul>
+                </div>
+
+                <p>In summary: your photos stay on your device. We only ever receive the final artwork you deliberately choose to share with your widget room.</p>
+            </div>
+
+            <div class="section">
+                <h2>Device Permissions</h2>
+                <p>WidgetLink requests the following device permissions, each with a specific and limited purpose:</p>
+                <ul>
+                    <li><strong>Camera</strong> — Only used when you tap "Take Photo" in the drawing screen (PRO feature). Never used in the background.</li>
+                    <li><strong>Photo Library / Media Access</strong> — Only used when you tap "Choose Photo" in the drawing screen (PRO feature). We only read the single photo you select.</li>
+                    <li><strong>Notifications</strong> — Used to alert you when a room member updates a shared widget, so your home screen widget stays in sync. You can decline this permission and the app will still work normally.</li>
+                    <li><strong>Internet Access</strong> — Required to sync drawings and widget images with room members.</li>
+                </ul>
+                <p style="margin-top: 15px;">You can revoke any permission at any time from your device's Settings app. Revoking camera or photo library access simply disables the Photo on Canvas feature; all other app functionality remains unaffected.</p>
+            </div>
+
             <div class="section">
                 <h2>Security & Privacy Features</h2>
                 <p>Your security is built into how WidgetLink works:</p>
-                
+
                 <div class="subsection">
                     <h3>Request-Based Access System</h3>
                     <p>When someone enters a room code, they cannot automatically access your widget. Instead, a <strong>join request is sent to the room creator (host)</strong>, who must manually approve it. This prevents unauthorized access even if someone randomly types in codes.</p>
                 </div>
-                
+
                 <div class="subsection">
                     <h3>Room-Based Privacy</h3>
                     <p>Drawings are only visible to members of the specific room. Your widgets aren't public and cannot be discovered by others unless you explicitly share your room code with them.</p>
                 </div>
-                
+
                 <div class="subsection">
                     <h3>No Cross-Room Access</h3>
                     <p>Members of one room cannot see or access drawings from other rooms. Each room is completely isolated.</p>
                 </div>
             </div>
-            
+
             <div class="section">
                 <h2>Third-Party Services</h2>
                 <p>WidgetLink uses the following third-party services solely for app functionality (not for tracking or advertising):</p>
-                
+
                 <div class="service-card">
                     <h3>Firebase Authentication</h3>
                     <p><strong>Purpose:</strong> Creates anonymous user accounts for the app to function</p>
                     <p><strong>Data Stored:</strong> Anonymous user ID only (no email, no password, no personal information)</p>
                     <p><strong>Why We Use It:</strong> To give each user a unique identifier needed for room membership</p>
                 </div>
-                
+
                 <div class="service-card">
                     <h3>Firebase Firestore</h3>
                     <p><strong>Purpose:</strong> Stores room data and manages join requests</p>
                     <p><strong>Data Stored:</strong> Room names, room codes, anonymous member IDs, join request status</p>
                     <p><strong>Why We Use It:</strong> To enable real-time syncing of room memberships and requests</p>
                 </div>
-                
+
+                <div class="service-card">
+                    <h3>Firebase Cloud Messaging (FCM)</h3>
+                    <p><strong>Purpose:</strong> Delivers widget update notifications</p>
+                    <p><strong>Data Stored:</strong> FCM device token (anonymous, no personal data)</p>
+                    <p><strong>Why We Use It:</strong> To notify your device when a room member sends a new drawing, so your home screen widget updates automatically</p>
+                </div>
+
                 <div class="service-card">
                     <h3>Supabase Storage</h3>
                     <p><strong>Purpose:</strong> Stores widget drawing images</p>
-                    <p><strong>Data Stored:</strong> Image files of your drawings</p>
+                    <p><strong>Data Stored:</strong> Final composed drawing images only — never original photos from your camera or gallery</p>
                     <p><strong>Why We Use It:</strong> To store and serve widget images to room members</p>
                 </div>
-                
+
+                <div class="service-card">
+                    <h3>Google Play Billing (Android) / App Store (iOS)</h3>
+                    <p><strong>Purpose:</strong> Processes PRO subscription and lifetime purchase payments</p>
+                    <p><strong>Data Stored:</strong> Purchase tokens are verified server-side via Firebase Cloud Functions; we store only your premium status (active/inactive) and subscription type — no payment card details ever touch our servers</p>
+                    <p><strong>Why We Use It:</strong> To unlock PRO features after a verified purchase</p>
+                </div>
+
                 <p style="margin-top: 20px;"><strong>Important:</strong> We do NOT use Firebase Analytics, Google Analytics, or any other analytics services. We do NOT use advertising networks or SDKs.</p>
             </div>
-            
+
             <div class="section">
                 <h2>Your Rights & Control</h2>
                 <ul>
                     <li><strong>Delete your data:</strong> You can request complete data deletion by following the process outlined below.</li>
                     <li><strong>Leave rooms:</strong> Exit any room at any time from the app dashboard.</li>
                     <li><strong>Control access:</strong> You decide who joins your rooms through the manual approval system.</li>
+                    <li><strong>Camera & photo library:</strong> You can revoke these permissions at any time in your device Settings. This only disables the Photo on Canvas feature.</li>
+                    <li><strong>Notifications:</strong> You can disable notifications at any time in your device Settings without affecting core app functionality.</li>
                     <li><strong>No account recovery:</strong> Since accounts are completely anonymous with no email or password, there is no account recovery process.</li>
                     <li><strong>Data portability:</strong> Since we don't collect personal data, there's no personal data to export.</li>
                 </ul>
             </div>
-            
+
             <div class="section">
                 <h2>Request Complete Data Deletion</h2>
                 <p>If you want to completely delete all your data from our servers (including your anonymous account, room memberships, and drawings), please follow these steps:</p>
-                
+
                 <div class="deletion-box">
                     <h3>📋 Data Deletion Process</h3>
                     <ol>
@@ -412,7 +237,7 @@
                         </li>
                     </ol>
                 </div>
-                
+
                 <p style="margin-top: 20px;"><strong>What will be deleted:</strong></p>
                 <ul style="margin-top: 10px;">
                     <li>Your anonymous user account</li>
@@ -420,10 +245,11 @@
                     <li>Your room memberships</li>
                     <li>All drawings/widgets you uploaded</li>
                     <li>Any pending join requests</li>
+                    <li>Your premium status record (if applicable)</li>
                 </ul>
                 <p style="margin-top: 15px; color: #666; font-size: 14px;"><em>⚠️ Note: Once deleted, this data cannot be recovered. We will process your request within 7 business days and send you a confirmation email.</em></p>
             </div>
-            
+
             <div class="section">
                 <h2>Data Retention</h2>
                 <p>We retain data only as long as necessary for the app to function:</p>
@@ -431,40 +257,41 @@
                     <li>Room data and drawings are kept as long as the room exists</li>
                     <li>When all members leave a room, the room data may be periodically cleaned</li>
                     <li>Anonymous user IDs are retained to maintain room memberships</li>
+                    <li>Premium status is retained to honour your purchase — it is removed upon a data deletion request</li>
                     <li>No historical usage data or logs are kept</li>
+                    <li>Photos you use on the canvas are never stored on our servers and are not subject to any retention policy</li>
                 </ul>
             </div>
-            
+
             <div class="section">
                 <h2>Children's Privacy</h2>
-                <p>WidgetLink does not knowingly collect any personal information from anyone, including children. The app is designed to be privacy-friendly for users of all ages. Since we don't collect personal information and only use anonymous IDs, we don't have age verification requirements.</p>
+                <p>WidgetLink does not knowingly collect any personal information from anyone, including children. The app is designed to be privacy-friendly for users of all ages. Since we don't collect personal information and only use anonymous IDs, we don't have age verification requirements. The camera and photo library features are gated behind a PRO subscription and are used solely to create drawings — no images are stored beyond the final composed artwork the user deliberately sends.</p>
             </div>
-            
+
             <div class="section">
                 <h2>International Users</h2>
                 <p>WidgetLink can be used worldwide. Data is stored on Firebase (Google Cloud) and Supabase servers, which may be located in different countries. However, since we only store anonymous IDs and drawings (no personal data), there are no privacy concerns related to international data transfers.</p>
             </div>
-            
+
             <div class="section">
                 <h2>Changes to This Policy</h2>
                 <p>As an indie project, we may update this privacy policy from time to time to reflect changes in our practices or for legal reasons. Any changes will be posted on this page with an updated "Last Updated" date at the top. Continued use of WidgetLink after changes constitutes acceptance of the updated policy.</p>
                 <p>We will notify users of significant changes through an in-app notice.</p>
             </div>
-            
+
             <div class="section">
                 <h2>About This Indie Project</h2>
                 <p>WidgetLink is developed and maintained by an independent developer. This is a passion project created with love for users who value privacy and simplicity. There is no company, no investors, and no commercial interests behind this app — just one developer who wants to create something useful while respecting your privacy.</p>
             </div>
-            
+
             <div class="contact-box">
                 <h2>Contact Us</h2>
                 <p>If you have questions about this privacy policy or WidgetLink's privacy practices, please feel free to reach out:</p>
                 <a href="mailto:ak375456@gmail.com?subject=WidgetLink Privacy Question">Email Us</a>
                 <p style="margin-top: 20px; font-size: 14px; color: #666;">We typically respond within 2-3 business days</p>
             </div>
-            
         </div>
-        
+
         <div class="footer">
             <p><strong>Thank you for trusting WidgetLink!</strong></p>
             <p style="margin-top: 10px;">© 2026 WidgetLink - An Indie Developer Project</p>
